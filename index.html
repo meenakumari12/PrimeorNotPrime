@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Frist file</title>
+        <meta chaeset = "utf-8">
+
+    </head>
+    <body>
+        <h1><b>this is Phase 2</b></h1>
+        <input type = "text" id = "text1">
+        <input type = "button" value = "submit" onclick = "readText()">
+        <p id ="result"></p>
+
+        <script>
+            function readText()  //javascript function
+            {
+                var a = document.getElementById("text1").value;
+                var count=0;
+                for(var i=1;  i<=a ;i++)
+                {
+                    
+                    if(a%i==0)
+                    {
+                        count=count+1;
+                    }
+                   
+                }
+                if(count == 2)
+                {
+                    document.write("prime number");
+                }  
+                else
+                {
+                    document.write("not a prime number");
+                }  
+
+            }
+            
+        </script>
+
+    </body>
+</html>
+</DOCTYPE>
